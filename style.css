@@ -1,0 +1,341 @@
+:root{
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #F3E6DD;
+    --bg-secondary:#EACCC0;
+    --nav-primary: #23232e;
+    --nav-secondary: #141418;
+    --nav-logo-triangle: #141418;
+
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+    background: #da9263;
+}
+
+header{
+    z-index: 2;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    height: 5rem;
+    background-color: var(--nav-primary);
+    width: 100vw;
+
+}
+.logo{
+    margin-left: 2.5rem;
+    position: absolute;
+    float: left;
+
+}
+.logo img{
+    
+    filter: brightness(0.9);
+    filter: invert();
+    height: 6rem;
+    border-bottom-left-radius: 2px;
+    box-shadow: 1px 0px 2px 0px rgba(255, 255, 255, 0.75);
+
+}
+.logo > span::after{
+    content: "";
+    display: inline;
+    position: absolute;
+    bottom: 0.1rem;
+    border-left: 0.5rem solid var(--nav-logo-triangle);
+    border-right: 0.5rem solid transparent;
+    border-top: 0.5rem solid var(--nav-logo-triangle);
+    border-bottom: 0.5rem solid transparent;
+
+}
+
+
+
+
+header{
+    display: flexbox;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    justify-items: stretch;
+    
+}
+
+main{
+
+    scroll-snap-type: y mandatory;
+}
+
+#section1{
+    scroll-snap-align: center;
+    width: 100vw;
+    height: calc(100vh - 5rem);
+
+    overflow: hidden;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+#section1{
+    background-image: url('1.jpg');
+}
+
+#section1 img{
+    object-fit: cover;
+    object-position: right;
+}
+.boxedText{
+    display: block;
+    width: max-content;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 10vh;
+    padding: 1rem;
+
+}
+
+.boxedText h2{
+    color: rgba(0, 0, 0, 0.822);
+    font-size: 7vw;
+    font-style: bold;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+#gallery img{
+    margin: 10px;
+    border: 10px solid whitesmoke;
+    border-bottom-width: 30px;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+
+}
+
+#contactSection{
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+.contactContainer{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: left;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+}
+
+.contactContainer form{
+    margin-right: 0px;
+    width: 30rem;
+    height: 20rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: left;
+    justify-content: center;
+}
+.contactContainer form h2{
+    font-size: 2rem;
+}
+
+.contactContainer form input , .contactContainer form textarea{
+    background-color: rgba(28, 28, 31, 0.05);
+    border: none;
+    border-bottom: 2px solid var(--nav-primary);
+    border-radius: 1px;
+    resize: none;
+}
+
+.contactContainer img{
+    margin-right: 0px;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+
+}
+
+
+
+@media only screen and (max-width: 1023px){
+    .contactContainer img{
+        display: none;
+    
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    .contactContainer form{
+        width: 20rem;
+    }
+
+    #hamburger-menu{
+        display: block;
+        float: right;
+    }
+    #hamburger-menu svg{
+        padding-top: 1.5rem;
+    }
+    
+    .header{
+        min-height: 5rem;
+        max-height: 7rem;
+        
+    }
+
+    #navbar{
+        display: none;
+        background-color: var(--nav-primary);
+        flex-direction: column;
+        padding-top: 0rem;
+        height: 0px;
+        width: 100vw;
+        
+    }
+
+    .navbar-item{
+        border-bottom: solid 1px black;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .navbar-item-content{
+        margin-right: 1rem;
+        height: 5rem;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: left;
+        color: var(--text-primary);
+        text-decoration: none;
+    
+    }
+    .navbar-item-content span{
+        margin-right: 0.5rem;
+    }
+    
+    .navbar-item:hover{
+        color: var(--text-secondary);
+        background-color: var(--nav-secondary);
+    }
+
+}
+
+@media only screen and (min-width: 601px){
+    #hamburger-menu{
+        display: none;
+    }
+    .header{
+        height: 5rem;
+    }
+    
+    #navbar{
+        margin-right: 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .navbar-item-content{
+        margin-right: 1rem;
+        height: 5rem;
+        width: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-primary);
+        text-decoration: none;
+        transition: color 2.5 ease-in;
+    
+    }
+    
+    .navbar-item:hover .navbar-item-content{
+        color: var(--text-secondary);
+        background-color: var(--nav-secondary);
+    }
+}
+
+
+@keyframes colorChange{
+    0% { color:#612073 }
+    10% { color:#612073 }
+
+    20% { color: #1EB7D9 }
+    30% { color: #1EB7D9 }
+
+    40% { color: #038C3E }
+    50% { color: #038C3E }
+
+    60% { color: #F2A30F }
+    70% { color: #F2A30F }
+
+    80% { color:#F25D27 }
+    100% { color:#F25D27 }
+
+}
+
+.color-switch{
+    animation: colorChange 3s infinite ;
+}
+
+
+footer{
+    font-family: 'lato';
+    font-size: 2vh;
+    color: var(--text-primary);
+    background-color: var(--nav-primary);
+    border-bottom: 1px solid var(--nav-secondary);
+    height: 3vh;
+    display: flex;
+    
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="/img/logo3.jpg" alt=""><span id="triangle"></span></a>
+        <a class="navbar-item-content" id="hamburger-menu" onclick="menuClick()">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <ul class="navbar" id="navbar" onclick="menuClick()">
+            <li class="navbar-item">
+                <a href="#gallery" class="navbar-item-content">
+                    <i class="far fa-snowflake fa-2x"></i>
+                    <span class="link-text">czapki</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#contactSection" class="navbar-item-content">
+                    <i class="far fa-heart fa-2x"></i>
+                    <span class="link-text">kontakt</span>
+                </a>
+            </li>
+
+
+            <li class="navbar-item">
+                <a href="#" class="navbar-item-content">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <span class="link-text">instagram</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="navbar-item-content">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <span class="link-text">facebook</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="navbar-item-content">
+                    <i class="fab fa-etsy fa-2x"></i>
+                    <span class="link-text">etsy</span>
+                </a>
+            </li>
+        </ul>
+
+    </header>
+
+    <main>
+        <section id="section1">
+
+            <div class="boxedText">
+                <h2>Tworzę ciepłe czapki <br>specjalnie dla <span class="color-switch">ciebie</span></h2>
+
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="spacer" style="height: 50px; width: 100vw;"></div>
+            <img src="czapka1.jpg" alt="">
+            <img src="czapka2.jpg" alt="">
+            <img src="czapka3.jpg" alt="">
+            <img src="czapka4.jpg" alt="">
+            <img src="czapka5.jpg" alt="">
+            <img src="czapka6.jpg" alt="">
+            <img src="czapka7.jpg" alt="">
+            <img src="czapka8.jpg" alt="">
+            <img src="czapka9.jpg" alt="">
+            <div class="spacer" style="height: 50px; width: 100vw;"></div>
+        </section>
+
+        <section id="contactSection" >
+            <div class="contactContainer">
+                <form action="submit">
+                    <h2>napisz do mnie!</h2><br>
+                    <input type="email" name="email" id="email" placeholder="twój email"><br>
+                    <textarea name="message" id="message" cols="20" rows="7" placeholder="twoja wiadomość"></textarea><br>
+                    <input type="submit" value="wyślij">
+                </form>
+                <img src="/img/form.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding-bottom: 10px;">
+        <i class="fas fa-code"></i>
+        <p style="margin-left: 10px;"> Jarosław Myjak</p>
+    </footer>
+</body>
+
+</html>
