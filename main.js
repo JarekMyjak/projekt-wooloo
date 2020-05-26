@@ -29,3 +29,17 @@ const menuClick = () => {
     }
 }
 
+
+
+const galleryViewer = document.querySelector('#galleryView');
+const galleryViewerImage = document.querySelector('#galleryViewImg');
+document.querySelectorAll(".viewable").forEach(element => {
+    element.addEventListener('click', (element)=>{
+        galleryViewerImage.src = element.target.src;
+        galleryViewer.style.display = 'flex';
+    })
+});
+
+galleryViewer.addEventListener('click' ,() => {
+    galleryViewer.style.display = 'none';
+});
