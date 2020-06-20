@@ -10,21 +10,18 @@
         integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="shop.css">
     <script src="main.js" defer></script>
     <title>Wooloo</title>
 </head>
 
 <body>
-
-    <div class="loader loader-shown">
-        <div class="lds-heart"><i class="fa fa-heart fa-5x"></i></div>
-    </div>
-        
-
-
     <div id="galleryView">
         <img id="galleryViewImg" src="" alt="">
+    </div>
+
+    <div class="loader">
+        <div class="lds-heart"><div></div></div>
     </div>
 
     <header class="header">
@@ -70,36 +67,18 @@
     </header>
 
     <main>
-        <section id="section1">
+        <section class="productList">
+            <a href="" target="_blank" rel="noopener noreferrer"></a>
+            <div class="productItem">
+                <img class="thumbnail" src="czapka1.jpg" alt="">
+                <div class="productInfo">
+                    <h2>Nazwa Czapki</h2><br>
+                    <p class="description">Wełna alpaki oraz yeti spleciona węzłem gordyjskim. Noszona jedynie przez najznakomitszych przedstawicieli gatunku ludzkiego. Partia </p>
+                    <div class="availibility">dostępnych: <span class="availibilitynum">6</span></div>
+                    <button class="shopingCart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                
 
-            <div class="boxedText">
-                <h2>Tworzę ciepłe czapki <br>specjalnie dla <span class="color-switch">Ciebie</span></h2>
-
-            </div>
-        </section>
-        <section id="gallery">
-            <div class="spacer" style="height: 50px; width: 100vw;"></div>
-            <img src="czapka1.jpg" alt="" class="viewable">
-            <img src="czapka2.jpg" alt="" class="viewable">
-            <img src="czapka3.jpg" alt="" class="viewable">
-            <img src="czapka4.jpg" alt="" class="viewable">
-            <img src="czapka5.jpg" alt="" class="viewable">
-            <img src="czapka6.jpg" alt="" class="viewable">
-            <img src="czapka7.jpg" alt="" class="viewable">
-            <img src="czapka8.jpg" alt="" class="viewable">
-            <img src="czapka9.jpg" alt="" class="viewable">
-            <div class="spacer" style="height: 50px; width: 100vw;"></div>
-        </section>
-
-        <section id="contactSection" >
-            <div class="contactContainer">
-                <form action="submit">
-                    <h2>napisz do mnie!</h2><br>
-                    <input type="email" name="email" id="email" placeholder="twój email"><br>
-                    <textarea name="message" id="message" cols="20" rows="7" placeholder="twoja wiadomość"></textarea><br>
-                    <input type="submit" value="wyślij">
-                </form>
-                <img src="form.jpg" alt="">
             </div>
         </section>
     </main>

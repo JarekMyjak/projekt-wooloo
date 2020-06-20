@@ -43,3 +43,7 @@ document.querySelectorAll(".viewable").forEach(element => {
 galleryViewer.addEventListener('click' ,() => {
     galleryViewer.style.display = 'none';
 });
+
+document.onLoad = () =>{
+    //document.querySelector('.loader').classList.remove('show-preloader');
+}
