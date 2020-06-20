@@ -44,6 +44,7 @@ galleryViewer.addEventListener('click' ,() => {
     galleryViewer.style.display = 'none';
 });
 
-document.onLoad = () =>{
-    document.querySelector('.loader').classList.remove('show-preloader');
-}
+
+//defer sprawia że nawet nie pytam czy załadowało, poprostu usuwam preloader
+document.querySelector('.loader').classList.remove('loader-show');
+
