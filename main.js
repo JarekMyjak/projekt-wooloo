@@ -45,5 +45,5 @@ galleryViewer.addEventListener('click' ,() => {
 });
 
 document.onLoad = () =>{
-    //document.querySelector('.loader').classList.remove('show-preloader');
+    document.querySelector('.loader').classList.remove('show-preloader');
 }
