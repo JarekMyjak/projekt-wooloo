@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="list.css">
+    <script src="main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Wooloo</title>
+</head>
+
+<body>
+    <div id="galleryView">
+        <img id="galleryViewImg" src="" alt="">
+    </div>
+
+    <div class="loader">
+        <div class="lds-heart">
+            <div></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <a href="#" class="logo"><img src="logo3.jpg" alt=""><span id="triangle"></span></a>
+        <a class="navbar-item-content" id="hamburger-menu" onclick="menuClick()">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <ul class="navbar" id="navbar" onclick="menuClick()">
+            <li class="navbar-item">
+                <a href="index.html#gallery" class="navbar-item-content">
+                    <i class="far fa-snowflake fa-2x"></i>
+                    <span class="link-text">czapki</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="list.html" class="navbar-item-content">
+                    <i class="far fa-heart fa-2x"></i>
+                    <span class="link-text">Blog</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#contactSection" class="navbar-item-content">
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                    <span class="link-text">kontakt</span>
+                </a>
+            </li>
+
+
+            <li class="navbar-item">
+                <a href="#" class="navbar-item-content">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <span class="link-text">instagram</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="navbar-item-content">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <span class="link-text">facebook</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="navbar-item-content">
+                    <i class="fab fa-etsy fa-2x"></i>
+                    <span class="link-text">etsy</span>
+                </a>
+            </li>
+        </ul>
+
+    </header>
+
+    <main>
+        <section class="articleList">
+            <a class="articleItem" href="" target="_blank" rel="noopener noreferrer">
+
+                <div class="thumbnail">
+                    <img class="thumbnailImage rotate" src="Makrama.jpg" alt="">
+                </div>
+                <div class="articleInfo">
+                    <h2>Makrama!</h2><br>
+                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, iste, vero voluptatibus nesciunt rem unde ipsam nobis cupiditate odio commodi odit nemo sint, numquam accusantium. Magnam, dignissimos! Aperiam, officiis sunt.</p>
+                </div>
+
+            </a>
+
+            <a class="articleItem" href="" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail">
+                    <img class="thumbnailImage rotate" src="Makrama2.jpg" alt="">
+                </div>
+                <div class="articleInfo">
+                    <h2>Jak rozpocząć nową makramę</h2><br>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quam odio ipsam omnis amet culpa reiciendis quos mollitia, saepe sit ducimus? Natus eum magni odio, mollitia architecto laboriosam facilis quos.</p>
+                </div>
+            </a>
+
+            <a class="articleItem" href="" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail">
+                    <img class="thumbnailImage rotate" src="Mati.jpg" alt="">
+                </div>
+                <div class="articleInfo">
+                    <h2>Nowa czapka</h2><br>
+                    <p class="description">Wełna alpaki oraz yeti spleciona węzłem gordyjskim. Noszona jedynie przez
+                        najznakomitszych przedstawicieli gatunku ludzkiego. </p>
+                </div>
+            </a>
+
+            <a class="articleItem" href="" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail">
+                    <img class="thumbnailImage rotate" src="czapka1.jpg" alt="">
+                </div>
+                <div class="articleInfo">
+                    <h2>Relacja z testów ociepleniowych czapki</h2><br>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eveniet praesentium distinctio eaque similique quis qui veniam nisi tempora in nobis nihil, nulla cumque architecto nesciunt facilis odit aliquid. Quam.</p>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <footer style="padding-bottom: 10px;">
+        <i class="fas fa-code"></i>
+        <p style="margin-left: 10px;"> Jarosław Myjak</p>
+    </footer>
+</body>
+
+</html>
